@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+  <style>
+  .hidden{
+
+    color: white;
+  }
+  .shown
+  {
+    color: black;
+  }
+  </style>
+  <!--
+  A module is created by using the AngularJS function angular.module
+  AngularJS modules define AngularJS applications.
+  The AngularJS application is defined by ng-app="myApp".
+  The application runs inside the <div>.
+  -->
+  <p>Madlibs Yo.</p>
+  <div ng-app="myApp" ng-controller="myCtrl">
+    Sport: <input type="text" ng-model="Sport"><br>
+    Name: <input type="text" ng-model="Name"><br>
+    Name: <input type="text" ng-model="Name1"><br>
+    Room of House: <input type="text" ng-model="Room"><br>
+    Favorite Food: <input type="text" ng-model="Food"><br><br>
+    <button ng-click = "reset()"> Reset</button>
+    <button ng-click = "submit()"> Submit</button><br><br>
+
+
+
+<span style="display: {{showit}}">  I don't know what they were doing but when i walked in the
+<strong> <span ng-bind="Room"></span> </strong> I had seen <strong><span ng-bind="Name"></span></strong> eating <strong><span ng-bind="Food"></span></strong>
+ while <strong><span ng-bind="Name1"></span></strong> was playing
+<strong> <span ng-bind="Sport"></span> </strong>. It was pretty cool to say the least.</span>
+
+
+
+  </div>
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+
+      $scope.Sport = "Basketball";
+      $scope.Name1 = "Maddie";
+      $scope.Name = "Tyler";
+      $scope.Room = "Living Room";
+      $scope.Food = "Tacos";
+      $scope.showit = "none";
+
+    $scope.reset = function(){
+
+
+      $scope.Sport = "";
+      $scope.Name1 = "";
+      $scope.Name = "";
+      $scope.Room = "";
+      $scope.Food = "";
+      $scope.showit = "none";
+
+    }
+
+    $scope.submit = function(){
+      if($scope.Sport == ""|| $scope.Name == "" || $scope.Name1 =="" || $scope.Room == ""
+    || $scope.Food == ""){
+
+
+        $scope.showit="none";
+      }
+      else
+      {
+
+      $scope.showit="block";
+    }
+
+
+
+
+  }
+});
+  </script>
+
+</body>
+</html>

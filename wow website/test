@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Tyler's Arena Characters</title>
+</head>
+
+<body background="C:\Users\Tyler\Pictures/background.jpg">>
+
+<h1> Tyler's WoW Characters</h1>
+<div>
+  <pre style="font-size:20px;text-align:center;font-family:verdana;">
+    <span style="background-color:powderblue">My name is Tyler and I am 20 years old, a CS major, and an avid gamer.
+    I truly enjoy my major as well as the games i play. A dream of mine is
+    to play WoW professionally and to stream for an extra source of income.
+    My twitch is located at <a href="https://www.twitch.tv/gabagoolx">twitch.tv/gabagoolx </a>and these are my
+    three main WoW characters.</span>
+  </pre>
+</div>
+<h2 style="color:blue"><span>Duelist Paradeigma</span></h2>
+<p>Highest Rating: 2336</p>
+<pre>Current Rating: 0                     <span>Win/Loss 0-0 </pre></span>
+<p>0 Rating Gain (since last played)</p>
+<a href="https://worldofwarcraft.com/en-us/character/bloodscalp/paradeigma">
+  <img src="C:\Users\Tyler\Pictures/Paradeigma.png" alt="Paradeigma" style="width:1060px;height:1060px;">
+</a>
+<h2 style="color:pink"><span>Duelist Gabagool</span></h2>
+<p>Highest Rating: 2515</p>
+<pre>Current Rating: 1970                  <span>Win/Loss 48-35 </pre></span>
+<p>119 Rating Gain (since last played)</p>
+<a href="https://worldofwarcraft.com/en-us/character/bloodscalp/gabagool">
+  <img src="C:\Users\Tyler\Pictures/Gabagool.png" alt="Gabagool" height="1060" width="1060">
+</a>
+<h2 style="color:orange;"><span>Duelist Gabagool</span></h2>
+<p>Highest Rating: 2252</p>
+<pre>Current Rating: 1556                  <span style="background-color:black">Win/Loss 25-13 </pre></span>
+<p>143 Rating Gain (since last played)</p>
+<a href="https://worldofwarcraft.com/en-us/character/stormreaver/gabagool">
+  <img src="C:\Users\Tyler\Pictures/Gabagool2.png" alt="Gabagool" height="1060" width="1060">
+</a>
+
+</html>

@@ -1,0 +1,25 @@
+aside a{
+  background-color:rgb(100, 159, 236);
+  border:5px double;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+  box-shadow: 2px 5px 0 0 rgb(52, 59, 44);
+  color:rgb(198, 42, 61); /* use Color Picker */
+  display:block;
+  font-size:1.75rem;
+  margin:5px 5px 9px 5px;
+  padding: 15px 0;
+  position:relative;
+  text-align:center;
+  text-decoration:none;
+}
+aside p{
+  font-size:medium;
+  text-align:left;
+}
+h1 {
+  font-size:x-large;
+  text-align-last:center;
+}

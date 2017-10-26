@@ -1,0 +1,27 @@
+p {
+    color: rgb(212, 38, 38);
+    font-size: 16px;
+    text-align: center;
+
+}
+.main {
+	/* You can set the margin property to auto to horizontally center the element within its container.
+	The element will then take up the specified width,
+	and the remaining space will be split equally between the left and right margins: */
+background: url("background.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+h1{
+  color: white;
+  text-decoration: underline;
+}
+#header{
+
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+
+}

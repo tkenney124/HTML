@@ -1,0 +1,23 @@
+
+p {
+    color: yellow;
+    font-size: 40px;
+
+}
+pre {
+  color: yellow;
+  font-size: 40px;
+  font-family: verdana;
+}
+span {
+  background-color: black;
+}
+h1 {
+  color: red;
+  text-align: center;
+  font-size: 52px;
+  border: 8px solid Dodgerblue;
+}
+h2 {
+  font-size: 50px;
+}

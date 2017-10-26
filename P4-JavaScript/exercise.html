@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Example</title>
+</head>
+<body>
+  <h1> Form validation Example </h1>
+  <form id="myForm">
+    <input type = "password"  id = "first" placeholder="Password">
+    <input type = "password"  id = "second" placeholder="Re-enter Password">
+    <input type = "reset"  id = "reset" >
+    <input type = "button" value="submit" id = "submit" >
+  </form>
+  <h3> Put in your password and Re-enter it"</h3>
+  <script>
+    function chkPasswords() {
+      var Password1 = document.getElementById("first");
+      var Password2 = document.getElementById("second");
+      console.log
+      if(Password1.value == 0 || Password2.value == 0) {
+       document.getElementsByTagName("h3")[0].innerHTML="You have failed to enter in a password at all!";
+       document.getElementsByTagName("h3")[0].style.color="red";
+         return false;
+       }
+      if (Password1.value == Password2.value){
+        document.getElementsByTagName("h3")[0].innerHTML="Hooray! You have matched passwords!";
+        document.getElementsByTagName("h3")[0].style.color="blue";
+
+
+
+        return true;
+      }
+     if (Password1.value != Password2.value){
+       document.getElementsByTagName("h3")[0].innerHTML="Your passwords do not match!";
+       document.getElementsByTagName("h3")[0].style.color="red";
+        return false;
+      }
+
+
+      }
+
+
+
+
+    // Register listeners
+    document.getElementById("submit").addEventListener('click',chkPasswords);
+  </script>
+</body>
+</html>

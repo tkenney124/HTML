@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <title>JavaScript Example</title>
+</head>
+<body>
+  <h1> Form validation Example </h1>
+  <form id="myForm">
+    <input type = "password"  id = "first" placeholder="Password">
+    <input type = "password"  id = "second" placeholder="Re-enter Password">
+    <input type = "reset"  id = "reset" >
+    <input type = "button" value="submit" id = "submit" >
+    <div id="error"></div>
+  </form>
+
+  <script>
+  $(document).ready(function(){
+
+
+    $("#submit").click(function(){
+      console.log($("#first").val());
+      console.log($("#second").val());
+      if($("#first").val() == "" || $("#second").val() == ""){
+
+        $("#error").css("color","red");
+        $("#error").html("You have failed to enter in a password!");
+        return false;
+      }
+      else if($("#first").val() == $("#second").val()){
+        $("#error").css("color","blue");
+        $("#error").html("Hooray! You have matched passwords!");
+        return true;
+      }
+      else if($("#first").val() != $("#second").val()){
+        $("#error").css("color","red");
+        $("#error").html("These passwords are not the same");
+        return false;
+      }
+    });
+
+  });
+
+  </script>
+
+</body>
+</html>
